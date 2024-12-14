@@ -1,0 +1,11 @@
+
+
+mat-form-field,
+textarea{
+  width: 100%;
+}
+
+#savB{
+  background-color: var(--mat-sys-error);
+  color: white;
+}

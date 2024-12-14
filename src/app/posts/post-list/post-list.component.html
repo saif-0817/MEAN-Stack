@@ -1,0 +1,19 @@
+<mat-accordion *ngIf="posts.length > 0">
+    @for (post of posts; track $index) {
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title> {{post.title}} </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>{{post.content}}</p>
+        <mat-action-row>
+          <button mat-button>EDIT</button>
+          <button mat-button>DELETE</button>
+        </mat-action-row>
+      </mat-expansion-panel>
+    }
+  </mat-accordion>
+
+
+  <p class="info-text" *ngIf="posts.length === 0">No posts added yet!</p>
+
+
